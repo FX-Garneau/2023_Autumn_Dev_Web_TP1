@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="initial-scale=1">
+      <title>Filmania Movies - Évaluation</title>
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+      <header>
+         <a href="index.html">
+            <h1 style="font-size: 0em;">Filmania</h1>
+            <img src="img/logo.png" alt="Filmania Movies Logo">
+         </a>
+         <nav>
+            <ul>
+               <li><a href="index.html">Accueil</a></li>
+               <li><a href="#">Visioner</a></li>
+               <li><a href="#">Catégories</a></li>
+               <li><a href="#">Nos Favoris</a></li>
+               <li><a href="#">Nouveautés</a></li>
+               <li><a href="evaluations.html">Évaluations</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+        <form action="mailto:ulhuo001@edu.cegepgarnea.ca" method="post">
+            <fieldset id="evaluation">
+                <legend>Évaluation</legend>
+
+                <label for="nom">Nom du critique:</label>
+                <input type="text" id="nom" name="nom" placeholder="nom du critique" required>
+                
+                <label for="courriel">Courriel:</label>
+                <input type="email" id="courriel" name="courriel" placeholder="courriel" required>
+                
+                <label for="age">Âge:</label>
+                <input type="number" id="age" name="age" placeholder="age" required>
+
+                <label for="titre">Titre du film / série:</label>
+                <input type="text" id="titre" name="titre" placeholder="titre du film" required>
+                
+                <label for="categorie">Catégorie:</label>
+                <select id="categorie" name="categorie" required>
+                    <option disabled selected hidden>Veuillez choisir une catégorie</option>
+                    <option value="Film">Film</option>
+                    <option value="Série">Série</option>
+                </select>
+
+                <label>Évaluation:</label>
+                <div>
+                    <input type="radio" id="excellent" name="evaluation" value="Excellent" required>
+                    <label for="excellent">Excellent</label>
+
+                    <input type="radio" id="tresbien" name="evaluation" value="Très bien" required>
+                    <label for="tresbien">Très bien</label>
+
+                    <input type="radio" id="bien" name="evaluation" value="Bien" required>
+                    <label for="bien">Bien</label>
+
+                    <input type="radio" id="moyen" name="evaluation" value="Moyen" required>
+                    <label for="moyen">Moyen</label>
+
+                    <input type="radio" id="navet" name="evaluation" value="C’est un navet!" required>
+                    <label for="navet">C’est un navet!</label>
+                </div>
+
+                <label for="commentaire">Commentaire:</label>
+                <textarea id="commentaire" name="commentaire" required></textarea>
+            
+            </fieldset>
+
+            <button type="submit">Envoyer</button>
+        </form>
+      </main>
+      <footer>
+         <p>Ulric Huot ©Copyright 2023 -Tous droits réservés</p>
+      </footer>
+   </body>
+</html>
